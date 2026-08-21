@@ -42,8 +42,6 @@
 
 研究笔记在 [`knowledge/research/`](knowledge/research/)，可查、可复现。全文见 [docs/DISTILLATION.md](docs/DISTILLATION.md)。
 
-生成后跑 [`tools/verify_skill.py`](tools/verify_skill.py) 做检查，通过才发布。
-
 ## 安装
 
 按宿主编不同目录即可。仓库本身就是 Skill 目录。
@@ -83,13 +81,6 @@ luxun.skill ❯ 嘉豪是一个名字，又不止是一个名字。它是一面�
 ```
 
 更多见 [`examples/demo.md`](examples/demo.md)。
-
-## 边界
-
-- 不还原鲁迅的口语（无录音）
-- 不替代《鲁迅全集》原文，引文请查原书
-- 未收录书信、日记（本地全集不包含）
-- 1936 年之后的事，只能按已有心智模型推测，已在 Skill 内标注
 
 ## 来源与致谢
 
