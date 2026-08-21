@@ -24,3 +24,8 @@ Thumbs.db
 
 # Local override (keep the distilled skill clean)
 SKILL.md.local
+
+# Temporary credentials helpers (never commit)
+.tmp-askpass.py
+run-push.ps1
+*.askpass
