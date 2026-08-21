@@ -1,110 +1,82 @@
-<div align="center">
+# luxun-skill
 
-<img src="../social-preview.svg" alt="LUXUN.SKILL — Distill Lu Xun's way of writing into a Skill" width="100%">
+A Skill for writing in Lu Xun's written style: plain-style narration, understated irony, short sentences, and a mix of classical and vernacular Chinese.
 
-<br>
-
-# 🖋️ luxun-skill
-
-### *"Fierce-browed, I coolly defy a thousand pointing fingers; head bowed, like a willing ox I serve the children."*
+Built from the *Complete Works of Lu Xun*. For people who want to write in a Lu Xun-like register, or comment on something the way he would.
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](../LICENSE)
 [![Python 3.9+](https://img.shields.io/badge/Python-3.9%2B-blue.svg)](https://python.org)
 [![AgentSkills](https://img.shields.io/badge/AgentSkills-Standard-green)](https://agentskills.io)
 [![DeepSeek Harness](https://img.shields.io/badge/DeepSeek%20Harness-Skill-4D6BFE)](https://github.com/topics/dsh-plugin)
 
-<br>
-
-<table>
-<tr><td align="left">
-
-✍️ &nbsp;You want to **write like Lu Xun** — calm plain-style narration, understated irony, short-sentence rhythm — but every draft turns into a quote-quilt of his famous lines?<br>
-🗞️ &nbsp;You want him to **comment on today** — to look at the crowd, the silence, the self-deception through his eyes?<br>
-🧩 &nbsp;You want to **distill a Lu Xun-style Skill** — not mimic his tone, but reproduce his mental models and expression framework?
-
-</td></tr>
-</table>
-
-### ✨ That's what luxun-skill does.
-
-<br>
-
-**Source material + six-dimension research → a writing Skill that genuinely thinks like him.**
-
-It does not collect quotes. It extracts the **expression framework** — the way he sees problems, the way he builds a sentence, the way he ends a paragraph.
-
-[📖 Distillation Record](../docs/DISTILLATION.md) · [📋 PRD](../docs/PRD.md) · [🗺️ Roadmap](../ROADMAP.md) · [💬 Demo](../examples/demo.md)
-
-[**中文**](../README.md)
-
-</div>
-
----
-
-> 📝 **2026.07.01 Update — v1.0 released**: Distilled with the [dot-skill engine](https://github.com/titanwings/colleague-skill) celebrity six-dimension research flow. Source: the 18-volume *Complete Works of Lu Xun* (local full text). Output: a two-layer Skill (Work writing methodology + Persona cognitive signature), passing 13 quality checks with a hard "techniques stay invisible" constraint.
+[Distillation record](../docs/DISTILLATION.md) · [PRD](../docs/PRD.md) · [Examples](../examples/demo.md) · [中文](../README.md)
 
 ---
 
 ## What this is
 
-A **person** distilled into a **writing capability**.
+A Skill that takes a writing task and outputs text in a Lu Xun-like register.
 
-From *Call to Arms*, *Wandering*, *Wild Grass*, *Dawn Blossoms Plucked at Dusk*, to the sixteen essay collections, Lu Xun's written expression is decomposed into three parts:
+Three parts:
 
 | Part | Content | Purpose |
 |------|---------|---------|
-| **PART A — Writing methodology** | Plain-style narration, irony, parallelism, metaphor, ending technique | "How to write" — your writing toolbox |
-| **PART B — Cognitive signature** | Mental models, decision habits, expression DNA, honest boundaries | "How to think" — his frame for problems |
-| **Operating rules** | Invisible techniques, no self-review about writing, Layer 0 first | Make sure the output sounds like *him*, not like "an AI imitating him" |
+| Writing methodology | Rule-level notes on plain-style narration, irony, parallelism, metaphor, endings | How to write |
+| Cognitive signature | Mental models, decision habits, expression habits, limits | How to think |
+| Operating rules | Constraints (see below) | Keep the style consistent |
 
-> ⚠️ This Skill does **not** reproduce quotes. It extracts the expression framework — you can write entirely new content with it, and the content belongs to you.
+Two hard constraints when generating: the output must not mention technique names (such as "plain-style narration" or "irony"), and must not contain meta-commentary about the writing itself. Techniques live only in `work.md`; they do not surface in the finished text.
 
 ## Distillation method
 
-See [docs/DISTILLATION.md](../docs/DISTILLATION.md) for the full record. At its core is the dot-skill engine's **celebrity six-dimension research**:
+Built with the [dot-skill engine](https://github.com/titanwings/colleague-skill) celebrity flow, researched across six dimensions:
 
-1. **Writings** — systematic positions (the "cannibal" ritual critique, "stand the person" thought, "take-it-ism", resistance to despair)
-2. **Conversations** — polemic style (with Liang Shiqiu et al.), lecture records
-3. **Expression DNA** — linguistic fingerprint (classical-modern fusion, plain-style narration, irony, parallelism, color, name-sentence endings) ← the core
-4. **Decisions** — giving up medicine for literature, "leaving the old road", living by the pen, the "standing across" posture
-5. **External views** — Mao Zedong, Yu Dafu, and his opponents' criticism (kept as contrast)
-6. **Timeline** — creative era → *Wild Grass* era → essay era (shorter and harder over time)
+| Dimension | Content |
+|-----------|---------|
+| Writings | critique of ritual, "stand the person", take-it-ism, resistance to despair |
+| Conversations | polemics, lecture records |
+| Expression | classical-modern fusion, plain narration, irony, parallelism, color, endings |
+| Decisions | giving up medicine for literature, living by the pen |
+| External views | Mao Zedong, Yu Dafu, and his opponents' criticism |
+| Timeline | creative era → *Wild Grass* era → essay era |
 
-Research notes stay in [`knowledge/research/`](../knowledge/research/) — auditable and reproducible.
+Research notes are in [`knowledge/research/`](../knowledge/research/). Full record in [docs/DISTILLATION.md](../docs/DISTILLATION.md). The repo also ships [`tools/verify_skill.py`](../tools/verify_skill.py), which runs the checks before release.
 
 ## Install
 
-In 2026 — you have an Agent, let it install itself. Say to your Agent (DeepSeek Harness / Claude Code / OpenClaw / Codex):
+The repository is itself the Skill directory. Clone it into the host's skills directory:
 
-> Install the luxun-skill for me: `https://github.com/titanwings/luxun-skill`
+```bash
+git clone https://github.com/yh-liao-07/luxun-skill <dir>
+```
 
-Or clone manually:
-
-| Host | `<TARGET>` |
+| Host | Directory |
 |------|-----------|
-| DeepSeek Harness | `~/.dsh/skills/luxun-skill` (global) or `.dsh/skills/luxun-skill` (project) |
+| DeepSeek Harness | `~/.dsh/skills/luxun-skill` or `.dsh/skills/luxun-skill` |
 | Claude Code | `~/.claude/skills/luxun-skill` |
 | OpenClaw | `~/.openclaw/workspace/skills/luxun-skill` |
 | Codex | `~/.codex/skills/luxun-skill` |
 
 ## Usage
 
-| Command | Description |
-|---------|-------------|
-| `@luxun-skill: write an essay about X` | Full call — methodology + Lu Xun's mindset + expression style |
-| `@luxun-skill: revise this article` | Edit toward Lu Xun's expression level |
-| `python tools/verify_skill.py SKILL.md` | Run the local quality gate (13 checks) |
+| Command | Purpose |
+|---------|---------|
+| `@luxun-skill: write an essay about X` | Generate text |
+| `@luxun-skill: revise this article` | Edit/reword |
+| `python tools/verify_skill.py SKILL.md` | Run local checks |
 
-Techniques stay invisible: the output never says "plain-style narration" or "irony", and never reviews its own writing.
+`disable-model-invocation: true` is set, so the Skill activates only when `@luxun-skill` is called explicitly.
 
-## Honest boundaries
+## Boundaries
 
-- Cannot reproduce his spoken voice (no recordings survive)
-- Cannot replace the *Complete Works* itself — go to the original text for quotes
-- For events after 1936, only reasoned extrapolation from his mental models (labeled as such)
+- Does not reproduce Lu Xun's spoken voice (no recordings)
+- Does not replace the original works; quote from the source text directly
+- Does not include letters or diaries (not in the local corpus)
+- For events after 1936, extrapolates from his mental models only — noted inside the Skill
 
-## Citation & credits
+## Sources & credits
 
-Built with the **dot-skill engine** ([titanwings/colleague-skill](https://github.com/titanwings/colleague-skill)) six-dimension celebrity flow. Source: *Complete Works of Lu Xun* (People's Literature Publishing House, 18 volumes).
+- Base corpus: *Complete Works of Lu Xun* (People's Literature Publishing House, 18 volumes)
+- Engine: [dot-skill](https://github.com/titanwings/colleague-skill) (titanwings)
 
-Created by [@yh-liao-07](https://github.com/yh-liao-07) · powered by [dot-skill](https://github.com/titanwings/colleague-skill)
+MIT license. See [CITATION.cff](../CITATION.cff).

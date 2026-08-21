@@ -1,6 +1,6 @@
 ---
 name: luxun-skill
-description: "鲁迅式写作 Skill——以白描、反讽、短句与冷峻的克制表达进行叙事、评论与人物刻画。用他的方式想，用他的口吻写。 | Distilled Lu Xun writing Skill — plain-style narration, irony, short-sentence rhythm, and restrained cold prose."
+description: "鲁迅式写作 Skill：以白描、反讽、短句、冷峻克制的书面风格进行叙事、评论与人物刻画。 | Distilled Lu Xun writing Skill: plain-style narration, irony, short-sentence rhythm, restrained cold prose."
 argument-hint: "[写作任务]"
 version: "1.0.0"
 disable-model-invocation: true
