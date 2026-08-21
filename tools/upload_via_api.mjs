@@ -27,10 +27,21 @@ if (!repoDir || !owner || !repo || !token) {
 }
 
 // 1. exact committed file list
-// git already emits forward slashes; Node reads them fine on Windows too
-const files = execFileSync('git', ['ls-files'], { cwd: repoDir, encoding: 'utf8' })
-  .split('\n')
-  .filter(Boolean);
+// git already emits forward slashes; Node reads them fine on Windows too.
+// In sandboxed shells node cannot spawn git, so a precomputed list file
+// (produced by the caller, e.g. `git ls-files > filelist.txt`) may be given
+// via the FILELIST env var; otherwise the script runs git itself.
+let files;
+if (process.env.FILELIST) {
+  files = readFileSync(process.env.FILELIST, 'utf8')
+    .split('\n')
+    .map((s) => s.replace(/\r$/, ''))
+    .filter(Boolean);
+} else {
+  files = execFileSync('git', ['ls-files'], { cwd: repoDir, encoding: 'utf8' })
+    .split('\n')
+    .filter(Boolean);
+}
 
 const api = 'https://api.github.com';
 const headers = {
@@ -89,7 +100,7 @@ async function gh(method, route, body) {
       continue;
     }
 
-    const commitMsg = `distill: ${rel} — luxun-skill（鲁迅表达风格 Skill，dot-skill 引擎六维蒸馏）`;
+    const commitMsg = `distill: ${rel}`;
     const body = {
       message: commitMsg,
       content: base64,
