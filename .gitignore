@@ -1,0 +1,26 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+.venv/
+venv/
+*.egg-info/
+
+# Config with credentials
+.git-credentials
+.env
+*.pem
+
+# Playwright browser data
+playwright-data/
+
+# Temp
+/tmp/
+*.tmp
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Local override (keep the distilled skill clean)
+SKILL.md.local

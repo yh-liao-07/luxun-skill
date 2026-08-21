@@ -1,0 +1,11 @@
+# Required
+requests>=2.28.0
+
+# Optional: verify_skill / quality gate only needs the standard library;
+# requests is used by future auto-collection integrations (Feishu/DingTalk/Slack).
+
+# Optional: Chinese name → slug conversion
+pypinyin>=0.48.0
+
+# Optional: Playwright for Feishu browser login / DingTalk message scraping
+playwright>=1.40.0

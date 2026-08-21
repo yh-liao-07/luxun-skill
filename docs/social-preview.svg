@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="400" viewBox="0 0 1600 400">
+  <rect width="1600" height="400" fill="#0d1117"/>
+  <line x1="80" y1="330" x2="1520" y2="330" stroke="#30363d" stroke-width="2"/>
+  <text x="800" y="150" text-anchor="middle" font-family="Georgia, 'Songti SC', 'Noto Serif SC', serif" font-size="72" font-weight="bold" fill="#e6edf3">LUXUN.SKILL</text>
+  <text x="800" y="210" text-anchor="middle" font-family="Georgia, 'Songti SC', 'Noto Serif SC', serif" font-size="34" fill="#7d8590">把鲁迅的表达方式蒸馏成一个写作 Skill</text>
+  <text x="800" y="270" text-anchor="middle" font-family="Georgia, 'Songti SC', 'Noto Serif SC', serif" font-size="28" fill="#f2cc60" font-style="italic">“横眉冷对千夫指，俯首甘为孺子牛。”</text>
+  <text x="800" y="372" text-anchor="middle" font-family="sans-serif" font-size="20" fill="#484f58">白描 · 反讽 · 短句 · 冷峻 · 六维蒸馏</text>
+  <path d="M 200 330 L 200 250 Q 200 240 210 240 L 226 240" stroke="#58a6ff" stroke-width="3" fill="none"/>
+  <circle cx="226" cy="240" r="5" fill="#58a6ff"/>
+  <path d="M 1400 330 L 1400 250 Q 1400 240 1390 240 L 1374 240" stroke="#58a6ff" stroke-width="3" fill="none"/>
+  <circle cx="1374" cy="240" r="5" fill="#58a6ff"/>
+</svg>

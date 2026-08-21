@@ -1,0 +1,5 @@
+blank_issues_enabled: false
+contact_links:
+  - name: dot-skill 引擎
+    url: https://github.com/titanwings/colleague-skill
+    about: 蒸馏引擎本体——luxun-skill 只是它的一名「毕业生」，引擎问题请去上游

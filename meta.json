@@ -1,0 +1,162 @@
+{
+  "name": "鲁迅",
+  "display_name": "鲁迅",
+  "character": "celebrity",
+  "research_profile": "budget-friendly",
+  "classification": {
+    "language": "zh-CN",
+    "tags": [
+      "文学",
+      "写作",
+      "表达风格",
+      "鲁迅",
+      "白话文",
+      "杂文",
+      "讽刺"
+    ],
+    "gallery_category": "Celebrity"
+  },
+  "profile": {
+    "known_for": "中国现代文学开创者、杂文大家、思想家",
+    "occupation": "作家 / 思想家 / 文学研究者",
+    "identity": "中国现代文学之父，以冷峻白描与含而不露的反讽著称"
+  },
+  "summary": "鲁迅的表达风格——白描、反讽、文言白话融合、短句排比与冷峻收束",
+  "knowledge_sources": [
+    "本地《鲁迅全集》18 卷（小说/散文诗/散文/杂文/学术）",
+    "外部：论战史、毛泽东/郁达夫评价、学术分析"
+  ],
+  "type": "celebrity",
+  "lifecycle": {
+    "status": "active",
+    "created_at": "2026-08-21T08:22:58.819433+00:00",
+    "updated_at": "2026-08-21T08:22:58.819433+00:00",
+    "version": "v1"
+  },
+  "generation": {
+    "engine": "dot-skill",
+    "character": "celebrity",
+    "research_profile": "budget-friendly",
+    "preset": "dot.celebrity.v1",
+    "prompt_bundle": {
+      "preset": "dot.celebrity.v1",
+      "intake": "prompts/celebrity/intake.md",
+      "research": "prompts/celebrity/research.md",
+      "work_analyzer": "prompts/work_analyzer.md",
+      "persona_analyzer": "prompts/celebrity/persona_analyzer.md",
+      "work_builder": "prompts/work_builder.md",
+      "persona_builder": "prompts/celebrity/persona_builder.md",
+      "merger": "prompts/celebrity/merger.md",
+      "correction_handler": "prompts/correction_handler.md"
+    },
+    "research_profile_bundle": {
+      "research": "prompts/celebrity/research.md",
+      "persona_analyzer": "prompts/celebrity/persona_analyzer.md",
+      "persona_builder": "prompts/celebrity/persona_builder.md"
+    },
+    "research_profile_references": [],
+    "merge_strategy": "compact",
+    "quality_profile": "budget-friendly",
+    "knowledge_dirs": [
+      "docs",
+      "messages",
+      "emails",
+      "research/raw",
+      "research/merged",
+      "research/reviews",
+      "transcripts",
+      "subtitles"
+    ],
+    "storage_root": "skills/celebrity",
+    "research_tools": {
+      "subtitle_downloader": "tools/research/download_subtitles.sh",
+      "subtitle_cleaner": "tools/research/srt_to_transcript.py",
+      "research_merger": "tools/research/merge_research.py",
+      "quality_check": "tools/research/quality_check.py"
+    },
+    "created_from": [
+      "本地《鲁迅全集》18 卷（小说/散文诗/散文/杂文/学术）",
+      "外部：论战史、毛泽东/郁达夫评价、学术分析"
+    ],
+    "corrections_count": 0
+  },
+  "source_context": {
+    "domain": "public",
+    "relationship_to_user": "public_figure",
+    "is_real_person": true,
+    "is_public_figure": true,
+    "is_fictional": false
+  },
+  "engine": {
+    "name": "dot-skill",
+    "kind": "meta-skill",
+    "character": "celebrity",
+    "research_profile": "budget-friendly",
+    "preset": "dot.celebrity.v1",
+    "prompt_bundle": {
+      "preset": "dot.celebrity.v1",
+      "intake": "prompts/celebrity/intake.md",
+      "research": "prompts/celebrity/research.md",
+      "work_analyzer": "prompts/work_analyzer.md",
+      "persona_analyzer": "prompts/celebrity/persona_analyzer.md",
+      "work_builder": "prompts/work_builder.md",
+      "persona_builder": "prompts/celebrity/persona_builder.md",
+      "merger": "prompts/celebrity/merger.md",
+      "correction_handler": "prompts/correction_handler.md"
+    },
+    "research_profile_bundle": {
+      "research": "prompts/celebrity/research.md",
+      "persona_analyzer": "prompts/celebrity/persona_analyzer.md",
+      "persona_builder": "prompts/celebrity/persona_builder.md"
+    },
+    "research_profile_references": [],
+    "merge_strategy": "compact",
+    "quality_profile": "budget-friendly",
+    "knowledge_dirs": [
+      "docs",
+      "messages",
+      "emails",
+      "research/raw",
+      "research/merged",
+      "research/reviews",
+      "transcripts",
+      "subtitles"
+    ],
+    "storage_root": "skills/celebrity",
+    "research_tools": {
+      "subtitle_downloader": "tools/research/download_subtitles.sh",
+      "subtitle_cleaner": "tools/research/srt_to_transcript.py",
+      "research_merger": "tools/research/merge_research.py",
+      "quality_check": "tools/research/quality_check.py"
+    }
+  },
+  "schema_version": "3",
+  "slug": "luxun",
+  "kind": "meta-skill",
+  "subtype": null,
+  "preset": "dot.celebrity.v1",
+  "id": "meta-skill.celebrity.luxun",
+  "artifacts": {
+    "combined_skill": "SKILL.md",
+    "work_skill": "work_skill.md",
+    "persona_skill": "persona_skill.md",
+    "work_doc": "work.md",
+    "persona_doc": "persona.md",
+    "manifest": "manifest.json",
+    "combined_name": "celebrity_luxun",
+    "work_name": "celebrity_luxun_work",
+    "persona_name": "celebrity_luxun_persona",
+    "combined_command": "celebrity-luxun",
+    "work_command": "celebrity-luxun-work",
+    "persona_command": "celebrity-luxun-persona"
+  },
+  "compat": {
+    "legacy_command": "/create-icon",
+    "legacy_storage_root": "skills/celebrity",
+    "legacy_type": "celebrity"
+  },
+  "created_at": "2026-08-21T08:22:58.819433+00:00",
+  "updated_at": "2026-08-21T08:22:58.819433+00:00",
+  "version": "v1",
+  "corrections_count": 0
+}

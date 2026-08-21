@@ -1,0 +1,18 @@
+cff-version: 1.2.0
+message: "If you use luxun-skill, please cite the repository. It was distilled with the dot-skill engine and built on the Complete Works of Lu Xun."
+title: "luxun-skill"
+authors:
+  - family-names: Liao
+    given-names: Yuhong
+    orcid: ""
+preferred-citation:
+  type: software
+  title: "luxun-skill"
+  version: "1.0.0"
+  date-released: "2026-07-01"
+  url: "https://github.com/yh-liao-07/luxun-skill"
+acknowledgments:
+  - "dot-skill engine: https://github.com/titanwings/colleague-skill"
+  - "Source material: The Complete Works of Lu Xun (People's Literature Publishing House, 18 volumes)"
+license: MIT
+repository-code: "https://github.com/yh-liao-07/luxun-skill"
